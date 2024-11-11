@@ -1,0 +1,322 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: "Microsoft JhengHei", sans-serif;
+    padding-bottom: 60px;
+}
+
+.carousel-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 輪播圖本身的樣式 */
+.carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* 添加背景色 */
+}
+
+/* 輪播圖項目容器 */
+.carousel-item {
+    text-align: center;
+    /* 圖片居中 */
+    background-color: white;
+    /* 設置背景色 */
+    height: auto;
+    /* 自適應高度 */
+    max-height: 500px;
+    /* 設置最大高度，可以根據需要調整 */
+    padding: 20px;
+    /* 添加內邊距 */
+}
+
+/* 輪播圖圖片樣式 */
+.carousel-item img {
+    max-width: 100%;
+    /* 最大寬度為容器寬度 */
+    width: auto;
+    /* 自適應寬度 */
+    height: auto;
+    /* 自適應高度 */
+    max-height: 460px;
+    /* 設置最大高度，可以根據需要調整 */
+    object-fit: contain;
+    /* 保持圖片比例，完整顯示 */
+    margin: 0 auto;
+    /* 水平居中 */
+}
+
+/* 控制按鈕的基本樣式 */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 半透明黑色背景 */
+    border-radius: 50%;
+    /* 圓形按鈕 */
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    /* 預設隱藏 */
+    transition: all 0.3s ease;
+    /* 平滑過渡效果 */
+}
+
+/* 當滑鼠移到輪播區域時顯示按鈕 */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+/* 箭頭圖示樣式 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+    /* 添加陰影效果 */
+}
+
+/* 滑鼠移到按鈕上的效果 */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* 深色背景 */
+    transform: translateY(-50%) scale(1.1);
+    /* 稍微放大效果 */
+}
+
+/* 設定按鈕位置 */
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+/* 可選：添加更好的回應式設計 */
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* About me section */
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section p,
+section ul {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section ul li strong {
+    color: #4a90e2;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Card improvements */
+.card-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.projects-section .container-fluid {
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4c76bd, #6ab7e4);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(106, 183, 228, 0.4);
+}
+
+/* Video container improvements */
+.video-container {
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.embed-responsive {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer improvements */
+footer {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal improvements */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(45deg, #4c76bd, #6ab7e4);
+    color: white;
+    border: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel {
+        margin: 20px auto;
+    }
+
+    .card-container {
+        padding: 0 10px;
+    }
+
+    #about-me {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
